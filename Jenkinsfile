@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout SCM') {
             steps {
-                checkout scm
+                git branch: 'main', url: 'https://github.com/shivamsingh163248/EC2_Jenkins_terraform.git'
             }
         }
 
